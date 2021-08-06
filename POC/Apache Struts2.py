@@ -11,7 +11,7 @@
 
 import requests
 
-address = '47.102.204.195:8080'
+address = 'xxx:8080'
 
 if "http" not in address:
     address="http://"+address
